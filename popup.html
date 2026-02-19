@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 260px;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 8px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 10px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<h2>YouTube Focus Pro</h2>
+
+<div class="toggle">
+  <span>Hide Shorts</span>
+  <input type="checkbox" id="hideShorts">
+</div>
+
+<div class="toggle">
+  <span>Hide Comments</span>
+  <input type="checkbox" id="hideComments">
+</div>
+
+<div class="toggle">
+  <span>Hide Sidebar</span>
+  <input type="checkbox" id="hideSidebar">
+</div>
+
+<div class="toggle">
+  <span>Hide Home Feed</span>
+  <input type="checkbox" id="hideHome">
+</div>
+
+<div class="toggle">
+  <span>Subscriptions Only</span>
+  <input type="checkbox" id="subscriptionsOnly">
+</div>
+
+
+<div class="toggle">
+  <span>Hide Trending</span>
+  <input type="checkbox" id="hideTrending">
+</div>
+
+<div class="toggle">
+  <span>Focus Mode</span>
+  <input type="checkbox" id="focusMode">
+</div>
+
+<div class="footer">
+  Stay focused 🚀
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

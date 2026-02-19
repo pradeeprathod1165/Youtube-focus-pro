@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Block YouTube Shorts & Distractions",
+  "version": "1.0",
+  "description": "Hide shorts, comments, homepage feed and more on YouTube.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
